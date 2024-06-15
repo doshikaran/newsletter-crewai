@@ -1,6 +1,7 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
+from newsletter.tools.custom_tool import SearchAndContent, FindSimilar, GetContents
 # Uncomment the following line to use an example of a custom tool
 # from newsletter.tools.custom_tool import MyCustomTool
 
@@ -19,7 +20,7 @@ class NewsletterCrew:
     def researcher(self) -> Agent:
         return Agent(
             config=self.agents_config["researcher"],
-            tools=[],
+            tools=[SearchAndContent(), FindSimilar(), GetContents()],
             verbose=True,
         )
 
@@ -27,7 +28,7 @@ class NewsletterCrew:
     def editor(self) -> Agent:
         return Agent(
             config=self.agents_config["editor"],
-            tools=[],
+            tools=[SearchAndContent(), FindSimilar(), GetContents()],
             verbose=True,
         )
 
@@ -35,7 +36,7 @@ class NewsletterCrew:
     def designer(self) -> Agent:
         return Agent(
             config=self.agents_config["designer"],
-            tools=[],
+            tools=[SearchAndContent(), FindSimilar(), GetContents()],
             verbose=True,
             allow_delegation=False,  # This agent can't delegate,
         )
