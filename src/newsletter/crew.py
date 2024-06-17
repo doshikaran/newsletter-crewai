@@ -3,6 +3,8 @@ from crewai.project import CrewBase, agent, crew, task
 
 from newsletter.tools.custom_tool import SearchAndContent, FindSimilar, GetContents
 # from langchain_anthropic import ChatAnthropic
+# from langchain_groq import ChatGroq
+
 # Uncomment the following line to use an example of a custom tool
 # from newsletter.tools.custom_tool import MyCustomTool
 
