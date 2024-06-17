@@ -815,19 +815,19 @@ cron = ["capturer (>=2.4)"]
 
 [[package]]
 name = "crewai"
-version = "0.30.11"
+version = "0.28.8"
 description = "Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
 optional = false
 python-versions = "<=3.13,>=3.10"
 files = [
-    {file = "crewai-0.30.11-py3-none-any.whl", hash = "sha256:127e223a7965a3ee1c61034531f5c543580c69641a4f738781fe67503f552a9c"},
-    {file = "crewai-0.30.11.tar.gz", hash = "sha256:71797c3a1da9a7d8fe6b308a260a9b27c1ce425b585a64bb1abc2b95df69d274"},
+    {file = "crewai-0.28.8-py3-none-any.whl", hash = "sha256:ce8af4915ed0c43b9f593cd0aef17d9a85557a809d493fddca7609e5a6279c2e"},
+    {file = "crewai-0.28.8.tar.gz", hash = "sha256:02e95d5db7a614794b10527d12996cf211a691d18cb84deff29a43a877bfd405"},
 ]
 
 [package.dependencies]
 appdirs = ">=1.4.4,<2.0.0"
 click = ">=8.1.7,<9.0.0"
-crewai-tools = {version = ">=0.2.6,<0.3.0", optional = true, markers = "extra == \"tools\""}
+crewai-tools = {version = ">=0.1.7,<0.2.0", optional = true, markers = "extra == \"tools\""}
 embedchain = ">=0.1.98,<0.2.0"
 instructor = ">=0.5.2,<0.6.0"
 langchain = ">=0.1.10,<0.2.0"
@@ -836,27 +836,26 @@ opentelemetry-api = ">=1.22.0,<2.0.0"
 opentelemetry-exporter-otlp-proto-http = ">=1.22.0,<2.0.0"
 opentelemetry-sdk = ">=1.22.0,<2.0.0"
 pydantic = ">=2.4.2,<3.0.0"
-python-dotenv = ">=1.0.0,<2.0.0"
+python-dotenv = "1.0.0"
 regex = ">=2023.12.25,<2024.0.0"
 
 [package.extras]
-tools = ["crewai-tools (>=0.2.6,<0.3.0)"]
+tools = ["crewai-tools (>=0.1.7,<0.2.0)"]
 
 [[package]]
 name = "crewai-tools"
-version = "0.2.6"
+version = "0.1.7"
 description = "Set of tools for the crewAI framework"
 optional = false
 python-versions = "<=3.13,>=3.10"
 files = [
-    {file = "crewai_tools-0.2.6-py3-none-any.whl", hash = "sha256:b98ce2d40f545ee3c1bef6ba7ce07bfcecc0ebc8faf9db315016515bd709ab90"},
-    {file = "crewai_tools-0.2.6.tar.gz", hash = "sha256:f46d7c89aae927a4059297efc8f9d32d2200db225b9464c7d2a2134b4fc028d5"},
+    {file = "crewai_tools-0.1.7-py3-none-any.whl", hash = "sha256:135a51b659fa0b58f1cf7bb6b1cdb47cccd557d98d889ed03b477b62c80ce38a"},
+    {file = "crewai_tools-0.1.7.tar.gz", hash = "sha256:8393900f6b0d37274218aaeb9ac6bcaaa6d719426a788ea45d21f993a49f283b"},
 ]
 
 [package.dependencies]
 beautifulsoup4 = ">=4.12.3,<5.0.0"
 chromadb = ">=0.4.22,<0.5.0"
-docx2txt = ">=0.8,<0.9"
 embedchain = {version = ">=0.1.85,<0.2.0", extras = ["github", "youtube"]}
 lancedb = ">=0.5.4,<0.6.0"
 langchain = ">=0.1.4,<0.2.0"
@@ -999,16 +998,6 @@ python-versions = ">=3.6,<4.0"
 files = [
     {file = "docstring_parser-0.15-py3-none-any.whl", hash = "sha256:d1679b86250d269d06a99670924d6bce45adc00b08069dae8c47d98e89b667a9"},
     {file = "docstring_parser-0.15.tar.gz", hash = "sha256:48ddc093e8b1865899956fcc03b03e66bb7240c310fac5af81814580c55bf682"},
-]
-
-[[package]]
-name = "docx2txt"
-version = "0.8"
-description = "A pure python-based utility to extract text and images from docx files."
-optional = false
-python-versions = "*"
-files = [
-    {file = "docx2txt-0.8.tar.gz", hash = "sha256:2c06d98d7cfe2d3947e5760a57d924e3ff07745b379c8737723922e7009236e5"},
 ]
 
 [[package]]
@@ -3716,13 +3705,13 @@ six = ">=1.5"
 
 [[package]]
 name = "python-dotenv"
-version = "1.0.1"
+version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
-    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+    {file = "python-dotenv-1.0.0.tar.gz", hash = "sha256:a8df96034aae6d2d50a4ebe8216326c61c3eb64836776504fcca410e5937a3ba"},
+    {file = "python_dotenv-1.0.0-py3-none-any.whl", hash = "sha256:f5971a9226b701070a4bf2c38c89e5a3f0d64de8debda981d1db98583009122a"},
 ]
 
 [package.extras]
@@ -4305,13 +4294,13 @@ mpmath = ">=1.1.0,<1.4.0"
 
 [[package]]
 name = "tenacity"
-version = "8.3.0"
+version = "8.4.1"
 description = "Retry code until it succeeds"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "tenacity-8.3.0-py3-none-any.whl", hash = "sha256:3649f6443dbc0d9b01b9d8020a9c4ec7a1ff5f6f3c6c8a036ef371f573fe9185"},
-    {file = "tenacity-8.3.0.tar.gz", hash = "sha256:953d4e6ad24357bceffbc9707bc74349aca9d245f68eb65419cf0c249a1949a2"},
+    {file = "tenacity-8.4.1-py3-none-any.whl", hash = "sha256:28522e692eda3e1b8f5e99c51464efcc0b9fc86933da92415168bc1c4e2308fa"},
+    {file = "tenacity-8.4.1.tar.gz", hash = "sha256:54b1412b878ddf7e1f1577cd49527bad8cdef32421bd599beac0c6c3f10582fd"},
 ]
 
 [package.extras]
@@ -4617,13 +4606,13 @@ typing-extensions = ">=3.7.4"
 
 [[package]]
 name = "urllib3"
-version = "2.2.1"
+version = "2.2.2"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "urllib3-2.2.1-py3-none-any.whl", hash = "sha256:450b20ec296a467077128bff42b73080516e71b56ff59a60a02bef2232c4fa9d"},
-    {file = "urllib3-2.2.1.tar.gz", hash = "sha256:d0570876c61ab9e520d776c38acbbb5b05a776d3f9ff98a5c8fd5162a444cf19"},
+    {file = "urllib3-2.2.2-py3-none-any.whl", hash = "sha256:a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472"},
+    {file = "urllib3-2.2.2.tar.gz", hash = "sha256:dd505485549a7a552833da5e6063639d0d177c04f23bc3864e41e5dc5f612168"},
 ]
 
 [package.dependencies]
@@ -5138,4 +5127,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<=3.13"
-content-hash = "cee48030267099a0a1a0ae536aa1bce2386744ccb603988d28bd9673077ae534"
+content-hash = "1163a25ccadb318af9f11b13bfe6aee17773c4b7c2d723131c18624c254dd7b5"

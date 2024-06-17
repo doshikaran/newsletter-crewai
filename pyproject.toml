@@ -6,8 +6,9 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<=3.13"
-crewai = {extras = ["tools"], version = "^0.30.11"}
-exa-py = "^1.0.12"
+exa-py = "^1.0.9"
+crewai = {version = "^0.28.7", extras = ["tools"]}
+
 
 [tool.poetry.scripts]
 newsletter = "newsletter.main:run"

@@ -2,6 +2,7 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
 from newsletter.tools.custom_tool import SearchAndContent, FindSimilar, GetContents
+# from langchain_anthropic import ChatAnthropic
 # Uncomment the following line to use an example of a custom tool
 # from newsletter.tools.custom_tool import MyCustomTool
 
@@ -16,12 +17,15 @@ class NewsletterCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
 
+    def llm(self):
+        llm = ChatAnthropic(model_name="claude-3-sonnet-20240229", max_tokens=4096)
     @agent
     def researcher(self) -> Agent:
         return Agent(
             config=self.agents_config["researcher"],
             tools=[SearchAndContent(), FindSimilar(), GetContents()],
             verbose=True,
+
         )
 
     @agent
